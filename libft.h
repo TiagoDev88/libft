@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: foraa <foraa@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tfilipe- <tfilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/18 11:42:13 by foraa             #+#    #+#             */
-/*   Updated: 2025/02/18 12:13:01 by foraa            ###   ########.fr       */
+/*   Created: 2025/02/18 11:42:31 by tfilipe-          #+#    #+#             */
+/*   Updated: 2025/03/05 20:15:47 by tfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_H
+# define LIBFT_H
 
-size_t	ft_strlen(const char *s)
-{
-	int	i;
+# include <stdlib.h>
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-}
+size_t	ft_strlen(const char *s);
+int		ft_atoi(const char *str);
+
+#endif
