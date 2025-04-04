@@ -24,14 +24,12 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 	p_dst = (unsigned char*)dest;
 	p_src = (unsigned char*)src;
 
-	
 	if (p_dst > p_src)
 	{
-		i = n;
-		while (i > 0)
+		while (n > 0)
 		{
-			p_dst[i - 1] = p_src[i - 1];
-			i--;
+			p_dst[n - 1] = p_src[n - 1];
+			n--;
 		}
 	}
 	else 
@@ -42,24 +40,6 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 			p_dst[i] = p_src[i];
 			i++;
 		}
-
 	}
 	return (dest);
-}
-
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-
-int main(void)
-{
-	char test1[11] = "ola 42";
-	char test2[11] = "totobola";
-
-	printf("%s\n%s\n", test1, test2);
-	printf("Ponteiros\n%p\n%p\n", &test1, &test2);
-	memmove(test2, test1, 5);
-	printf("%s\n%s\n", test1, test2);
-	printf("Ponteiros\n%p\n%p\n", &test1, &test2);
-	return (0);
 }
