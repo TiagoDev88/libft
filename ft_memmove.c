@@ -6,7 +6,7 @@
 /*   By: tfilipe- <tfilipe-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 09:43:33 by tfilipe-          #+#    #+#             */
-/*   Updated: 2025/04/04 10:49:13 by tfilipe-         ###   ########.fr       */
+/*   Updated: 2025/04/04 16:57:27 by tfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,33 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char *p_d;
 	unsigned char *p_s;
 
+	if (!dest && !src)
+		return (NULL);
+
 	p_d = (unsigned char*)dest;
 	p_s = (unsigned char*)src;
 
-	i = 0;
-	while (src[])
+	
+	if (p_d > p_s)
+	{
+		i = n;
+		while (i > 0)
+		{
+			p_d[i] = p_s[i];
+			--i;
+		}
+	}
+	else 
+	{
+		i = 0;
+		while(i < n)
+	{
+		p_d[i] = p_s[i];
+		i++;
+	}
+
+	}
+	return (dest);
 }
 
 #include <stdlib.h>
@@ -36,7 +58,7 @@ int main(void)
 
 	printf("%s\n%s\n", test1, test2);
 	printf("Ponteiros\n%p\n%p\n", &test1, &test2);
-	memmove(test2, test1, 11);
+	memmove(test2, test1, 5);
 	printf("%s\n%s\n", test1, test2);
 	printf("Ponteiros\n%p\n%p\n", &test1, &test2);
 	return (0);
