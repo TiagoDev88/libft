@@ -6,7 +6,7 @@
 /*   By: tfilipe- <tfilipe-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 09:43:33 by tfilipe-          #+#    #+#             */
-/*   Updated: 2025/04/04 10:39:11 by tfilipe-         ###   ########.fr       */
+/*   Updated: 2025/04/04 10:49:13 by tfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 
 	i = 0;
 	while (src[])
-
 }
 
 #include <stdlib.h>
