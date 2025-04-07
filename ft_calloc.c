@@ -10,3 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+void	*ft_calloc(size_t nmemb, size_t size)
+{
+	void			*ptr;
+	size_t			i;
+	unsigned char	*tmp;
+
+	ptr = malloc(nmemb * size);
+	if (!ptr)
+		return (NULL);
+	tmp = (unsigned char *)ptr;
+	i = 0;
+	while (i < nmemb * size)
+	{
+		tmp[i] = 0;
+		i++;
+	}
+	return (ptr);
+}
