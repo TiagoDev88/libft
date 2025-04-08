@@ -6,7 +6,7 @@
 /*   By: tfilipe- <tfilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 11:42:31 by tfilipe-          #+#    #+#             */
-/*   Updated: 2025/04/05 18:49:31 by tfilipe-         ###   ########.fr       */
+/*   Updated: 2025/04/08 11:25:30 by tfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,6 @@ void 	ft_putchar_fd(char c, int fd);
 void 	ft_putnbr_fd(int n, int fd);
 void 	ft_putendl_fd(char *s, int fd);
 void 	ft_putstr_fd(char *s, int fd);
+char 	*ft_strdup(const char *s);
 
 #endif
