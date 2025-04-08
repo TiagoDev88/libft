@@ -10,7 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+/**
+ * @brief Outputs an integer to the given file descriptor.
+ * 
+ * @param n The integer to output.
+ * @param fd The file descriptor.
+ */
 void ft_putnbr_fd(int n, int fd)
 {
 	

@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/**
+ * @brief Appends src to dst, ensuring null-termination and avoiding buffer overflow.
+ * 
+ * @param dst The destination string.
+ * @param src The source string.
+ * @param size Total size of the destination buffer.
+ * @return size_t The length of the string it tried to create.
+ */
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	dst_len;

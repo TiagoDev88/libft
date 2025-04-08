@@ -10,6 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+/**
+ * @brief Splits a string into an array of strings using a delimiter.
+ * 
+ * @param s The string to split.
+ * @param c The delimiter character.
+ * @return char** An array of strings, NULL-terminated.
+ */
 char **ft_split(char const *s, char c)
 {
 	

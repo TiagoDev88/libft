@@ -10,7 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+/**
+ * @brief Outputs a string to the given file descriptor.
+ * 
+ * @param s The string to output.
+ * @param fd The file descriptor.
+ */
 void ft_putstr_fd(char *s, int fd)
 {
 	

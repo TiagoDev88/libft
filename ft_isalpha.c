@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/**
+ * @brief Checks if a character is alphabetic.
+ * 
+ * @param c The character to check.
+ * @return int Non-zero if alphabetic, zero otherwise.
+ */
 int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))

@@ -10,6 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+/**
+ * @brief Trims characters from the beginning and end of a string.
+ * 
+ * @param s1 The string to trim.
+ * @param set The set of characters to trim.
+ * @return char* The trimmed string.
+ */
 char *ft_strtrim(char const *s1, char const *set)
 {
 	

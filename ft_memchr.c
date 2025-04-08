@@ -11,6 +11,15 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief Searches for a character in a memory area.
+ * 
+ * @param s The memory area.
+ * @param c The character to search for.
+ * @param n Number of bytes to search.
+ * @return void* Pointer to the matching byte or NULL if not found.
+ */
 void *ft_memchr(const void *s, int c, size_t n)
 {
 	size_t	i;

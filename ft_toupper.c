@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/**
+ * @brief Converts a character to uppercase.
+ * 
+ * @param c The character to convert.
+ * @return int The uppercase equivalent if applicable.
+ */
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')

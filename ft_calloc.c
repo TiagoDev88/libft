@@ -11,6 +11,14 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief Allocates memory based on the nmemb and size and fills it with null's.
+ * 
+ * @param nmemb Number of elements.
+ * @param size Size of each element.
+ * @return void* Pointer to the allocated memory.
+ */
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void			*ptr;

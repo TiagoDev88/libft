@@ -11,6 +11,15 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief Locates a substring in a string, within the first len characters.
+ * 
+ * @param big The string to search in.
+ * @param little The substring to find.
+ * @param len Maximum number of characters to search.
+ * @return char* Pointer to the beginning of the located substring, or NULL if not found.
+ */
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t i;
