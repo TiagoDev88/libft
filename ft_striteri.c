@@ -6,7 +6,7 @@
 /*   By: tfilipe- <tfilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 20:58:17 by tfilipe-          #+#    #+#             */
-/*   Updated: 2025/04/04 20:58:17 by tfilipe-         ###   ########.fr       */
+/*   Updated: 2025/04/09 13:57:54 by tfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param s The string to modify.
  * @param f The function to apply.
  */
-void ft_striteri(char *s, void (*f)(unsigned int, char*))
+/*void ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	
-}
+}*/

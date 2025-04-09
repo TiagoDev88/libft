@@ -6,7 +6,7 @@
 /*   By: tfilipe- <tfilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 20:56:33 by tfilipe-          #+#    #+#             */
-/*   Updated: 2025/04/04 20:56:33 by tfilipe-         ###   ########.fr       */
+/*   Updated: 2025/04/09 13:58:17 by tfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param n The integer to output.
  * @param fd The file descriptor.
  */
-void ft_putnbr_fd(int n, int fd)
+/*void ft_putnbr_fd(int n, int fd)
 {
 	
-}
+}*/

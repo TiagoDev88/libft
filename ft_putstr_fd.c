@@ -6,7 +6,7 @@
 /*   By: tfilipe- <tfilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 20:57:27 by tfilipe-          #+#    #+#             */
-/*   Updated: 2025/04/04 20:57:27 by tfilipe-         ###   ########.fr       */
+/*   Updated: 2025/04/09 13:58:23 by tfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param s The string to output.
  * @param fd The file descriptor.
  */
-void ft_putstr_fd(char *s, int fd)
+/*void ft_putstr_fd(char *s, int fd)
 {
 	
-}
+}*/

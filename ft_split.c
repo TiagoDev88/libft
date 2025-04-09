@@ -6,7 +6,7 @@
 /*   By: tfilipe- <tfilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 20:59:50 by tfilipe-          #+#    #+#             */
-/*   Updated: 2025/04/04 20:59:50 by tfilipe-         ###   ########.fr       */
+/*   Updated: 2025/04/09 13:57:11 by tfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
  * @param c The delimiter character.
  * @return char** An array of strings, NULL-terminated.
  */
-char **ft_split(char const *s, char c)
+/*char **ft_split(char const *s, char c)
 {
 	
-}
+}*/

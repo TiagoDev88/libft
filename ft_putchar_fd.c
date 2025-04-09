@@ -6,7 +6,7 @@
 /*   By: tfilipe- <tfilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 20:57:46 by tfilipe-          #+#    #+#             */
-/*   Updated: 2025/04/04 20:57:46 by tfilipe-         ###   ########.fr       */
+/*   Updated: 2025/04/09 13:58:05 by tfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param c The character to output.
  * @param fd The file descriptor.
  */
-void ft_putchar_fd(char c, int fd)
+/*void ft_putchar_fd(char c, int fd)
 {
 	
-}
+}*/
