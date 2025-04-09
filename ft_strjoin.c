@@ -19,7 +19,7 @@
  * @param s2 Second string.
  * @return char* The newly allocated joined string.
  */
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*newstring;
 	size_t	len_s1;

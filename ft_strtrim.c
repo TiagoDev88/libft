@@ -14,14 +14,15 @@
 
 int	validate_set(char c, char const *set)
 {
-	while(*set)
+	while (*set)
 	{
 		if (c == *set)
 			return (1);
-		set++;	
+		set++;
 	}
 	return (0);
 }
+
 /**
  * @brief Trims characters from the beginning and end of a string.
  * 
@@ -29,47 +30,31 @@ int	validate_set(char c, char const *set)
  * @param set The set of characters to trim.
  * @return char* The trimmed string.
  */
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*ptr;
 	size_t	index;
-	size_t 	l_index;
+	size_t	l_index;
 	size_t	total;
-	size_t 	i;
+	size_t	i;
 
-	i = 0;
 	index = 0;
-	l_index = (ft_strlen(s1) - 1);
-
 	while (s1[index] && validate_set(s1[index], set))
 		index++;
-	while (s1[index] && validate_set(s1[l_index], set))
+	l_index = ft_strlen(s1);
+	while (l_index > index && validate_set(s1[l_index - 1], set))
 		l_index--;
-	total = (l_index - index) + 1;
-	ptr = malloc(sizeof(char) * total + 1);
+	total = (l_index - index);
+	ptr = malloc(sizeof(char) * (total + 1));
 	if (!ptr)
 		return (NULL);
-	/*while (index <= l_index)
+	i = 0;
+	while (index < l_index)
 	{
 		ptr[i] = s1[index];
 		index++;
 		i++;
-	}*/
-	ptr = ft_memcpy(ptr, &s1[index], ((l_index - index) + 1));
-	ptr[total + 1] = '\0';
-
+	}
+	ptr[i] = '\0';
 	return (ptr);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	char s1[] = "!,!ola 42 !,!";
-	char set[] = ",!";
-	char *test;
-	
-	test =ft_strtrim(s1, set);
-	printf("%s\n", test);
-	return (0);
-}*/

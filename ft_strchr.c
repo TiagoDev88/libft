@@ -31,6 +31,6 @@ char	*ft_strchr(const char *s, int c)
 		s++;
 	}
 	if (*s == convert_c)
-        return ((char *) s);
+		return ((char *) s);
 	return (NULL);
 }

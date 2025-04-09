@@ -20,17 +20,17 @@
  * @param len Number of bytes to fill.
  * @return void* Pointer to the memory area b.
  */
-void    *ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, size_t len)
 {
-    unsigned char    *p;
 	size_t			i;
+	unsigned char	*p;
 
-    p = (unsigned char *) b;
+	p = (unsigned char *) b;
 	i = 0;
-    while (i < len)
+	while (i < len)
 	{
 		p[i] = (unsigned char)c;
 		i++;
 	}
-    return (b);
+	return (b);
 }

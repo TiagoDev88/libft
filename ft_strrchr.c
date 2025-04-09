@@ -26,13 +26,13 @@ char	*ft_strrchr(const char *s, int c)
 
 	convert_c = (char) c;
 	i = ft_strlen(s);
-	while (s[i] >= 0)
+	while (i >= 0)
 	{
 		if (s[i] == convert_c)
 			return ((char *) &s[i]);
 		i--;
 	}
 	if (s[i] == convert_c)
-        return ((char *) &s[i]);
+		return ((char *)&s[i]);
 	return (NULL);
 }

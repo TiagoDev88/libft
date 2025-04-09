@@ -18,14 +18,13 @@
  * @param s The string to duplicate.
  * @return char* The newly allocated copy of the string.
  */
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	size_t	len;
 	char	*tmp;
 
 	len = ft_strlen(s);
 	tmp = malloc(sizeof(char) * (len + 1));
-
 	if (!tmp)
 		return (NULL);
 	len = 0;

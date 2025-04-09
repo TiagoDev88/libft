@@ -18,12 +18,13 @@
  * @param big The string to search in.
  * @param little The substring to find.
  * @param len Maximum number of characters to search.
- * @return char* Pointer to the beginning of the located substring, or NULL if not found.
+ * @return char* Pointer to the beginning of the located substring,
+ * @return or NULL if not found.
  */
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t i;
-	size_t j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	if (!little[0])

@@ -18,9 +18,10 @@
  * @param s1 First memory area.
  * @param s2 Second memory area.
  * @param n Number of bytes to compare.
- * @return int Zero if equal, otherwise the difference between first differing bytes.
+ * @return int Zero if equal, otherwise the difference between
+ * @return first differing bytes.
  */
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t			i;
 	unsigned char	*str1;

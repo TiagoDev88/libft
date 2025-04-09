@@ -13,7 +13,8 @@
 #include "libft.h"
 
 /**
- * @brief Applies a function to each character of a string to create a new string.
+ * @brief Applies a function to each character of a 
+ * @brief string to create a new string.
  * 
  * @param s The source string.
  * @param f The function to apply.

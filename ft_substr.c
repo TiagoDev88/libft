@@ -20,7 +20,7 @@
  * @param len The length of the substring.
  * @return char* The extracted substring.
  */
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	length;
 	char	*ptr;

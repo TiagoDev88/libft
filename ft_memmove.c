@@ -20,18 +20,15 @@
  * @param n Number of bytes to move.
  * @return void* Pointer to dest.
  */
-void *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t i;
-	unsigned char *p_dst;
-	unsigned char *p_src;
+	unsigned char	*p_dst;
+	unsigned char	*p_src;
 
 	if (!dest && !src)
 		return (NULL);
-
-	p_dst = (unsigned char*)dest;
-	p_src = (unsigned char*)src;
-
+	p_dst = (unsigned char *)dest;
+	p_src = (unsigned char *)src;
 	if (p_dst > p_src)
 	{
 		while (n > 0)
@@ -40,14 +37,7 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 			n--;
 		}
 	}
-	else 
-	{
-		i = 0;
-		while(i < n)
-		{
-			p_dst[i] = p_src[i];
-			i++;
-		}
-	}
+	else
+		ft_memcpy(dest, src, n);
 	return (dest);
 }
