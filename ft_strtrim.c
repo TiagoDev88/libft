@@ -33,26 +33,26 @@ int	validate_set(char c, char const *set)
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*ptr;
-	size_t	index;
-	size_t	l_index;
+	size_t	start;
+	size_t	end;
 	size_t	total;
 	size_t	i;
 
-	index = 0;
-	while (s1[index] && validate_set(s1[index], set))
-		index++;
-	l_index = ft_strlen(s1);
-	while (l_index > index && validate_set(s1[l_index - 1], set))
-		l_index--;
-	total = (l_index - index);
+	start = 0;
+	while (s1[start] && validate_set(s1[start], set))
+		start++;
+	end = ft_strlen(s1);
+	while (end > start && validate_set(s1[end - 1], set))
+		end--;
+	total = end - start;
 	ptr = malloc(sizeof(char) * (total + 1));
 	if (!ptr)
 		return (NULL);
 	i = 0;
-	while (index < l_index)
+	while (start < end)
 	{
-		ptr[i] = s1[index];
-		index++;
+		ptr[i] = s1[start];
+		start++;
 		i++;
 	}
 	ptr[i] = '\0';
