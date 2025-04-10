@@ -6,7 +6,7 @@
 #    By: tfilipe- <tfilipe-@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/18 11:42:53 by tfilipe-          #+#    #+#              #
-#    Updated: 2025/04/05 15:16:22 by tfilipe-         ###   ########.fr        #
+#    Updated: 2025/04/10 14:49:40 by tfilipe-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,6 @@ CC = cc
 NAME = libft.a
 CFLAGS = -Wall -Wextra -Werror
 INCLUDE = -I.
-OBJDIR = obj
 
 SRCS =  ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 		ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
@@ -24,7 +23,7 @@ SRCS =  ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 		ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c \
 		ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
 
-OBJS = $(SRCS:%.c=$(OBJDIR)/%.o)
+OBJS = $(SRCS:%.c=%.o)
 
 RM = rm -f
 AR = ar
@@ -32,8 +31,7 @@ ARFLAGS = rcs
 
 all: $(NAME)
 
-$(OBJDIR)/%.o: %.c
-	@mkdir -p $(OBJDIR)
+%.o: %.c
 	@$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
 
 $(NAME):  $(OBJS)
@@ -41,7 +39,7 @@ $(NAME):  $(OBJS)
 	@echo "Libft successfully compiled"
 
 clean:
-	$(RM) -r $(OBJDIR)
+	$(RM) $(OBJS)
 	@echo "clean Objects removed"
 
 fclean: clean
