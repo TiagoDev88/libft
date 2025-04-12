@@ -28,7 +28,7 @@ BONUS_SRC = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
 			ft_lstmap.c
 
 OBJS = $(SRCS:%.c=%.o)
-BONUS_OBJ = $(BONUS_SRC:.c=.o)
+BONUS_OBJS = $(BONUS_SRC:.c=.o)
 
 RM = rm -f
 AR = ar
@@ -43,8 +43,8 @@ $(NAME):  $(OBJS)
 	$(AR) $(ARFLAGS) $(NAME) $(OBJS)
 	@echo "Libft successfully compiled"
 
-bonus: $(OBJ) $(BONUS_OBJ)
-	$(AR) $(ARFLAGS) $(NAME) $(OBJ) $(BONUS_OBJ)
+bonus: $(OBJS) $(BONUS_OBJS)
+	$(AR) $(ARFLAGS) $(NAME) $(OBJS) $(BONUS_OBJS)
 	@echo "Libft + Bonus compiled"
 
 clean:

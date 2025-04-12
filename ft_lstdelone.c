@@ -10,12 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+// #include "libft.h"
 
-void	ft_lstdelone(t_list *lst, void (*del)(void*))
-{
-	t_list	*ptr;
+// void	ft_lstdelone(t_list *lst, void (*del)(void*))
+// {
+// 	t_list	*ptr;
 
-	ptr = lst;
-	
-}
+// 	ptr = lst;
+
+// }
