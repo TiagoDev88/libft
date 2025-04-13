@@ -11,7 +11,17 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/**
+ * @brief Returns the last node of the list.
+ * 
+ * This function traverses the list starting from the head, moving through 
+ * each node 
+ * until it reaches the last one (the node where `next` is `NULL`).
+ * 
+ * @param lst Pointer to the first node in the list.
+ * @return t_list* Pointer to the last node in the list, or NULL if the list
+ *  is empty.
+ */
 t_list	*ft_lstlast(t_list *lst)
 {
 	t_list	*ptr;

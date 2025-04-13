@@ -11,7 +11,17 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/**
+ * @brief Calculates the size of the linked list.
+ * 
+ * This function traverses the entire list, counting the number of nodes 
+ * until the end is reached 
+ * (when a node's `next` pointer is `NULL`). It returns the total count of 
+ * nodes in the list.
+ * 
+ * @param lst Pointer to the first node in the list.
+ * @return size_t The number of nodes in the list.
+ */
 int	ft_lstsize(t_list *lst)
 {
 	t_list	*ptr;

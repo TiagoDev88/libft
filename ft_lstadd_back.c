@@ -11,11 +11,22 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/**
+ * @brief Adds a new node to the end of the list.
+ * 
+ * This function traverses the list to find the last node and then sets its
+ *  `next` pointer 
+ * to point to the new node. The new node becomes the last node in the list.
+ * 
+ * @param lst Pointer to the pointer of the first node in the list.
+ * @param new Pointer to the new node to be added.
+ */
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*ptr;
 
+	if (lst == NULL || new == NULL)
+		return ;
 	if (*lst == NULL)
 		*lst = new;
 	else
