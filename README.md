@@ -57,33 +57,31 @@ It helped deepen my understanding of:
 ```bash
 git clone https://github.com/TiagoDev88/ft_printf.git
 cd ft_printf
+```
 
 **2. Compile the library**
 
 ```bash
 make
+```
 This will generate the libftprintf.a static library.
 
-3. Use it in your project
+**3. Use it in your project**
 
 In your code:
 
 c
-Copiar
-Editar
 #include "ft_printf.h"
 Compile with:
 
-bash
-Copiar
-Editar
+```bash
+
 gcc your_program.c -L. -lftprintf
+```
 📋 Testing
 You can test the function manually:
 
 c
-Copiar
-Editar
 #include "ft_printf.h"
 
 int main(void)
@@ -93,10 +91,9 @@ int main(void)
 }
 Compile and run:
 
-bash
-Copiar
-Editar
+```bash
 gcc -Wall -Wextra -Werror main.c libftprintf.a && ./a.out
+```
 Or use a tester like:
 
 paulo-santana/printf-tester
