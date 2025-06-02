@@ -67,11 +67,12 @@ make
 This will generate the libftprintf.a static library.
 
 **3. Use it in your project**
-
+```
 In your code:
 
 c
 #include "ft_printf.h"
+```
 Compile with:
 
 ```bash
@@ -80,7 +81,7 @@ gcc your_program.c -L. -lftprintf
 ```
 📋 Testing
 You can test the function manually:
-
+```
 c
 #include "ft_printf.h"
 
@@ -89,6 +90,7 @@ int main(void)
 	ft_printf("Hello %s! Number: %d | Hex: %x\n", "world", 42, 42);
 	return (0);
 }
+```
 Compile and run:
 
 ```bash
