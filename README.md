@@ -162,7 +162,7 @@ ft_lstiter
 
 ft_lstmap
 
-##**👤 Author**
+## **👤 Author**
 42 login: tfilipe-
 
 GitHub: @TiagoDev88
