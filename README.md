@@ -79,7 +79,7 @@ Compile with:
 
 gcc your_program.c -L. -lftprintf
 ```
-📋 Testing
+## 📋 Testing
 You can test the function manually:
 ```
 c
