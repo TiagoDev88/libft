@@ -70,7 +70,8 @@ gcc your_program.c -L. -lft
 ```
 
 ## 🧩 Functions
-Part 1 - libc functions
+**Part 1 - libc functions**
+
 ft_isalpha
 
 ft_isdigit
@@ -117,7 +118,8 @@ ft_calloc
 
 ft_strdup
 
-Part 2 - Additional functions
+**Part 2 - Additional functions**
+
 ft_substr
 
 ft_strjoin
@@ -140,7 +142,8 @@ ft_putendl_fd
 
 ft_putnbr_fd
 
-Bonus part - Linked list
+**Bonus part - Linked list**
+
 ft_lstnew
 
 ft_lstadd_front
@@ -159,7 +162,9 @@ ft_lstiter
 
 ft_lstmap
 
-👤 Author
+**👤 Author**
 Tiago Filipe
+
 42 login: tfilipe-
+
 GitHub: @TiagoDev88
