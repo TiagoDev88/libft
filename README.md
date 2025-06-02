@@ -57,11 +57,10 @@ It helped deepen my understanding of:
 ```bash
 git clone https://github.com/TiagoDev88/ft_printf.git
 cd ft_printf
-2. Compile the library
 
-bash
-Copiar
-Editar
+**2. Compile the library**
+
+```bash
 make
 This will generate the libftprintf.a static library.
 
